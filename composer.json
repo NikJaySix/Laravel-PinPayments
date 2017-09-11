@@ -1,0 +1,23 @@
+{
+    "name": "nikjaysix/laravel-pinpayments",
+    "description": "Laravel service provider for the Pin Payments API using the neotix/pin-php API.",
+    "type": "Package",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.*|5.*",
+        "noetix/pin-php": "2.0.1"
+    },
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Nicole Jay",
+            "email": "hello@nikjaysix.com.au"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "NikJaySix\\LaravelPinPayments\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
