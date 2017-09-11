@@ -2,7 +2,7 @@
 namespace NikJaySix\LaravelPinPayments;
 
 use Illuminate\Support\ServiceProvider;
-use Crucial\Service\Chargify;
+use Pin\Handler;
 use Config;
 
 class LaravelPinPaymentsServiceProvider extends ServiceProvider {
@@ -38,7 +38,7 @@ class LaravelPinPaymentsServiceProvider extends ServiceProvider {
 
         $this->app->bind('pinpayments', function ($app) {
 
-            $pin = new Pin\Handler(config('pinpayments'));
+            $pin = new Handler(config('pinpayments'));
 
             return $pin;
 
