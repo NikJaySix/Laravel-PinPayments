@@ -19,5 +19,15 @@
             "NikJaySix\\LaravelPinPayments\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NikJaySix\\LaravelPinPayments\\LaravelPinPaymentsServiceProvider"
+            ],
+            "aliases": {
+                "Pin": "NikJaySix\\LaravelPinPayments\\LaravelPinPaymentsFacade"
+            }
+        }
+    }
 }
