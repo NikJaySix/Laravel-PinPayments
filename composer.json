@@ -28,6 +28,9 @@
             "aliases": {
                 "Pin": "NikJaySix\\LaravelPinPayments\\LaravelPinPaymentsFacade"
             }
+        },
+        "branch-alias": {
+            "master": "1.0.3-dev"
         }
     }
 }
